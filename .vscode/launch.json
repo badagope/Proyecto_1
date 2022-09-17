@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-MinticApplication<mintic>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.web.mintic.MinticApplication",
+      "projectName": "mintic",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
