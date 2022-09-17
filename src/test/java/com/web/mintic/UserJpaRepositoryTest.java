@@ -21,7 +21,7 @@ public class UserJpaRepositoryTest {
   @Test
   public void saveUser() {
     User Luis = new User("Luis", "Hernandez", "luis@luis.com", "123456", "pass");
-    User Lusho = new User("Lusho", "Hernandez", "lusho@luis.com", "123456", "pass");
+    User Lusho = new User("Lusho", "Hernandez", "lushoNew@luis.com", "123456", "pass");
 
     repo.save(Luis);
     repo.save(Lusho);

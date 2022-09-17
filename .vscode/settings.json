@@ -1,3 +1,19 @@
 {
-  "java.configuration.updateBuildConfiguration": "interactive"
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "us-east.connect.psdb.cloud",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "mintic",
+      "database": "mintic",
+      "username": "3wlfwzz8eezouobl10xs",
+      "password": "pscale_pw_hYGgiWMcDMNLgdACeg10riv4Xa7ZMG2aErhGQ2IR0K3",
+      "connectionTimeout": 10
+    }
+  ]
 }

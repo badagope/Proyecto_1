@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <form method="post" th:action="@{login}" th:object="${form}">
+
+          <input type="hidden" th:field="*{user.id}">
+
+            <div class="mb-3 ">
+                <label for="email" class="col-sm-2 col-form-label">Ingrese su email:</label>
+                <div class="col-sm-10">
+                <input type="text" th:field="*{user.email}" class="form-control">
+                </div> 
+            </div>  
+            <div class="mb-3 ">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Ingrese su clave</label>
+                <div class="col-sm-10">
+                  <input type="password" th:field="*{user.password}" class="form-control">
+                  
+                </div>
+              </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Aceptar </button>
+                
+            </div>
+            <h6>No tienes usuario?,<a href="formulario.html" type="button" class="btn btn-link">Registrate</a></h4>
+
+        </form>
+    </div>
+    <script>
+        const user = "badagope"
+        const pw = "12345678"
+        function verificar() {
+            let usuario = document.getElementById("usuario").value
+            let clave = document.getElementById("clave").value
+            if (usuario == user && clave == pw) {
+                alert("Login exitoso")
+            }
+            else{
+                alert("Login invalido")
+            }
+
+        }
+    </script>
+</body>
+</html>
