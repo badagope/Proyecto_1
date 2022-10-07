@@ -1,0 +1,12 @@
+body {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1,h2,h3 {color: rgb(102, 3, 3); background-color: blue;
+font-family: 'Times New Roman', Times, serif;
+font-size: 40px;
+font-style: italic;
+font-weight: bold;
+text-align: center;
+text-decoration: underline;
+}

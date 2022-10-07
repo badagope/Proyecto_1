@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uwork | Nuevo empleado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
+    <link rel="icon"type="image/png" href="logos/uw_logo8.png">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-dark bg-dark">
+        <ul class="navbar nav">
+          <li class="nav-item">
+              <img src="logos/Uwork.png" width="360" height="129">
+          </li>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <br>
+            <br>
+            <a href="bienvenida_admin.php" type="button" class="btn btn-primary navbar-btn">Inicio</a>
+            
+          </ul>
+      </nav>
+    <h1>Creación de nuevo empleado</h1>
+<br>
+   <div class="container"> 
+    <form action="formulario_empleado.php" method="post">
+        
+          <br>
+    <div class="row g-3 align-items-center">
+        <div class="col-auto"> 
+            <label for="Nombre1" class="form-label">Nombre</label>
+        </div> 
+       
+        <div class="col-md-3">
+            <input type="name" class="form-control" id="Nombre1" placeholder="Nombre" name="nombre1" required>
+        </div>
+            
+    </div>
+        <br>
+    <div class="row g-3 align-items-center">
+        <div class="col-auto"> 
+            <label for="Apellidos" class="form-label">Apellidos</label>
+        </div> 
+       
+        <div class="col-md-3">
+            <input type="name" class="form-control" id="Apellidos" placeholder="Apellidos" name="apellidos" required>
+        </div>
+            
+    </div>
+    
+    <br>
+    
+    
+    <div class="row g-3 align-items-center">
+        <div class="col-auto"> 
+            <label for="email" class="form-label">E-mail</label>
+        </div> 
+       
+        <div class="col-md-3">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
+        </div>
+   <br>
+   
+   <div class="row g-3 align-items-center">
+       <div class="col-auto"> 
+           <label for="telefono" class="form-label">Telefono</label >
+       </div> 
+      
+       <div class="col-md-3">
+           <input type="number phone" class="form-control" id="telefono" placeholder="Telefono" name="telefono" required>
+       </div>
+
+    <div class="row g-3 align-items-center">
+        <div class="col-auto"> 
+            <label for="experiencia" class="form-label">Años de experiencia</label >
+        </div> 
+       
+        <div class="col-md-3">
+            <input type="number" class="form-control" id="experiencia" placeholder="Años de experiencia" name="experiencia" required>
+        </div>
+    <div class="row g-3 align-items-center">
+            <div class="col-auto"> 
+                <label for="idServicio" class="form-label">Tipo de servicio</label >
+            </div> 
+           
+            <div class="col-md-3">
+                <input type="number" class="form-control" id="idServicio" placeholder="Tipo de servicio" name="idServicio" required>
+            </div>
+    <div class="row g-3 align-items-center">
+                <div class="col-auto"> 
+                    <label for="idUbicacion" class="form-label">Código de ubicación</label >
+                </div> 
+               
+                <div class="col-md-3">
+                    <input type="number" class="form-control" id="idUbicacion" placeholder="Código de ubicación" name="idUbicacion" required>
+                </div>
+       <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Acepta terminos y condiciones.
+          </label>
+          <div class="invalid-feedback">
+            Debe estar de acuerdo antes de enviar.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+  <br>
+
+
+</body>
+</html>
